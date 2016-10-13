@@ -4,3 +4,5 @@
 /out/
 /target/
 *.class
+App.java
+AppTest.java
