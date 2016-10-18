@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.utils.convertors;
+package com.vladyslavvlasov.app.utils.convertors;
 
 /**
  * Created by Murcielago on 08.10.2016.

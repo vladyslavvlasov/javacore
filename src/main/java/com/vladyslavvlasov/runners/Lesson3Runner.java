@@ -1,6 +1,6 @@
-package com.vladyslavvlasov.utils.runners;
+package com.vladyslavvlasov.runners;
 
-import com.vladyslavvlasov.utils.convertors.PrimitiveConvertor;
+import com.vladyslavvlasov.app.utils.convertors.PrimitiveConvertor;
 
 /**
  * Created by Murcielago on 08.10.2016.
