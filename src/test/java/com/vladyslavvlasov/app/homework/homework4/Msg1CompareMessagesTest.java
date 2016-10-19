@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Murcielago on 13.10.2016.
  */
-public class TestMsg1 {
+public class Msg1CompareMessagesTest {
     @Test
 
     public void testtwomessages() {

@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * Created by Murcielago on 16.10.2016.
  */
-public class TestCircleArea {
+public class CircleAreaCalculateAreaTest {
     @Test
     public void testCircleArea() {
         double expectedResult = 7853.00;

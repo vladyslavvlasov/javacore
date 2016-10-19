@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.runners;
+package com.vladyslavvlasov.runners.Lesson3;
 
 import com.vladyslavvlasov.app.utils.convertors.PrimitiveConvertor;
 

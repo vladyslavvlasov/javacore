@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Murcielago on 16.10.2016.
  */
-public class TestNarrowingCasting {
+public class NarrowingCastingTest {
     @Test
     public void testCode() {
         int expectedResult = 3;

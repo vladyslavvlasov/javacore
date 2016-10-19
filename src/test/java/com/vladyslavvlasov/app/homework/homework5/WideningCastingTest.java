@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Created by Murcielago on 16.10.2016.
  */
-public class TestWideningCasting {
+public class WideningCastingTest {
     @Test
     public void testIt() {
         double expectedResult = 127.00;
