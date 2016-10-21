@@ -1,0 +1,7 @@
+argA,expectedResult
+5,5d
+6,6d
+83,83d
+-7,-7d
+88,88d
+0,0d

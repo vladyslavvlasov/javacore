@@ -3,7 +3,7 @@ package com.vladyslavvlasov.app.classwork.lesson5;
 /**
  * Created by Murcielago on 15.10.2016.
  */
-public class CircleArea2 {
+public class BiggerAreaCalculation {
     public static double calculateBigger(double area1, double area2) {
         //public static final double PI = 3.14d;
 

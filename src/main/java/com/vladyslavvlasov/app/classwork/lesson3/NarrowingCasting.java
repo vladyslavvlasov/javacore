@@ -5,9 +5,8 @@ package com.vladyslavvlasov.app.classwork.lesson3;
  */
 public class NarrowingCasting {
     int int1 = 0;
-    float float1 = 3.14159f;
 
-    public int narrowing() {
+    public int narrowing(float float1) {
         int1 = (int) float1;
         System.out.println(int1);
         return int1;

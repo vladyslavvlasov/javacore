@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.runners.homework4;
+package com.vladyslavvlasov.runners.homework.homework4;
 
 import com.vladyslavvlasov.app.homework.lesson4.BonusCalculator;
 

@@ -1,7 +1,7 @@
-package com.vladyslavvlasov.runners.Lesson5;
+package com.vladyslavvlasov.runners.classwork.Lesson5;
 
 import com.vladyslavvlasov.app.classwork.lesson5.CircleArea;
-import com.vladyslavvlasov.app.classwork.lesson5.CircleArea2;
+import com.vladyslavvlasov.app.classwork.lesson5.BiggerAreaCalculation;
 import com.vladyslavvlasov.app.classwork.lesson5.OddEvenNumber;
 import com.vladyslavvlasov.app.classwork.lesson5.RightSidedTriangle;
 
@@ -50,7 +50,7 @@ public class Lesson5MenuRunner {
             double area1 = scanner.nextDouble();
             System.out.println("Please enter area 2");
             double area2 = scanner.nextDouble();
-            CircleArea2.calculateBigger(area1, area2);
+            BiggerAreaCalculation.calculateBigger(area1, area2);
         }
         else if (num == 4){
             Scanner scanner = new Scanner(System.in);

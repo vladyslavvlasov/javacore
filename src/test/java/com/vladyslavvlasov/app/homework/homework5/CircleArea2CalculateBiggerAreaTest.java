@@ -1,24 +1,25 @@
 package com.vladyslavvlasov.app.homework.homework5;
 
-import com.vladyslavvlasov.app.classwork.lesson5.CircleArea;
-import com.vladyslavvlasov.app.classwork.lesson5.CircleArea2;
+import com.vladyslavvlasov.app.classwork.lesson5.BiggerAreaCalculation;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 /**
  * Created by Murcielago on 17.10.2016.
  */
+@RunWith(JUnitParamsRunner.class)
 public class CircleArea2CalculateBiggerAreaTest {
     @Test
-    public void testIt() {
-        double expectedResult = 40.0;
-        CircleArea2 testCircle = new CircleArea2();
-        Assert.assertEquals(expectedResult, testCircle.calculateBigger(40, 30), 0.0);
+    @FileParameters(value = "src/test/resources/biggerareadata.csv",
+            mapper = CsvWithHeaderMapper.class)
+
+    public void getTestData(double argA, double argB, double expectedResult) {
+        BiggerAreaCalculation testCircle = new BiggerAreaCalculation();
+        Assert.assertEquals(expectedResult, testCircle.calculateBigger(argA, argB), 0.0);
     }
-    @Test
-    public void testIt2() {
-        double expectedResult = 60;
-        CircleArea2 newCircle = new CircleArea2();
-        Assert.assertEquals(expectedResult, newCircle.calculateBigger(20, 60), 0.0);
-    }
+
 }

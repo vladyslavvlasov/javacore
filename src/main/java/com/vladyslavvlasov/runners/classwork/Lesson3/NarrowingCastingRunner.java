@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.runners.classwork3;
+package com.vladyslavvlasov.runners.classwork.Lesson3;
 
 import com.vladyslavvlasov.app.classwork.lesson3.NarrowingCasting;
 
@@ -8,6 +8,7 @@ import com.vladyslavvlasov.app.classwork.lesson3.NarrowingCasting;
 public class NarrowingCastingRunner {
     public static void main(String[] args) {
         NarrowingCasting casting = new NarrowingCasting();
-        casting.narrowing();
+        casting.narrowing(54f);
+
     }
 }

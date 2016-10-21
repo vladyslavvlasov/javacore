@@ -1,0 +1,9 @@
+argA,argB,argC,expectedResult
+5,4,3,true
+3,4,5,true
+5,4,3,true
+4,5,9,false
+10,90,65,false
+1,1,1,false
+5,6,4,false
+6,8,10,true

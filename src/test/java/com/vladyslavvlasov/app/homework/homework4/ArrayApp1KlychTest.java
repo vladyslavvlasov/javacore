@@ -1,29 +1,23 @@
 package com.vladyslavvlasov.app.homework.homework4;
 
 import com.vladyslavvlasov.app.homework.lesson4.ArrayApp;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 /**
  * Created by Murcielago on 18.10.2016.
  */
+@RunWith(JUnitParamsRunner.class)
 public class ArrayApp1KlychTest {
     @Test
-    public void testIt (){
-        String[] expectedResult = {"Slava Ukraini","Heroyam Slava"};
+    @FileParameters(value = "src/test/resources/klychdata.csv",
+            mapper = CsvWithHeaderMapper.class)
+    public void getTestData(int argA, String[] expectedResult) {
         ArrayApp testApp = new ArrayApp();
-        Assert.assertArrayEquals(expectedResult, testApp.returnKlych(0));
-    }
-    @Test
-    public void testIt2 (){
-        String[] expectedResult = {"Slava Nazii","Smert Vorogam"};
-        ArrayApp testApp = new ArrayApp();
-        Assert.assertArrayEquals(expectedResult, testApp.returnKlych(1));
-    }
-    @Test
-    public void testIt3 (){
-        String[] expectedResult = {"Ukraina","Ponad use"};
-        ArrayApp testApp = new ArrayApp();
-        Assert.assertArrayEquals(expectedResult, testApp.returnKlych(2));
+        Assert.assertArrayEquals(expectedResult, testApp.returnKlych(argA));
     }
 }
