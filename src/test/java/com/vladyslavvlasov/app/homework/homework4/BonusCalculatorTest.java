@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
  * Created by Murcielago on 18.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class BonusCalculatorCountBonusTest {
+public class BonusCalculatorTest {
     @Test
     @FileParameters(value = "src/test/resources/bonuscalculatordata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getTestData(double argA, int argB, double expectedResult) {
+    public void testBonusCalculator(double argA, int argB, double expectedResult) {
         BonusCalculator testBonus = new BonusCalculator();
         Assert.assertEquals(expectedResult, testBonus.countBonus(argA, argB), 0.0);
     }

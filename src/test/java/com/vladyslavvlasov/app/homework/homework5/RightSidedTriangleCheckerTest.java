@@ -16,7 +16,7 @@ public class RightSidedTriangleCheckerTest {
     @Test
     @FileParameters(value = "src/test/resources/righttriangledata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getData(int argA, int argB, int argC, boolean expectedResult) {
+    public void checkTriangle(int argA, int argB, int argC, boolean expectedResult) {
         RightSidedTriangle newTriangle = new RightSidedTriangle();
         Assert.assertEquals(expectedResult, newTriangle.rightTriangleChecker(argA, argB, argC));
     }

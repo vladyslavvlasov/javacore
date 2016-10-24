@@ -13,15 +13,15 @@ import static org.junit.Assert.assertEquals;
  * Created by Murcielago on 13.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class Msg1CompareMessagesTest {
+public class Msg1Test {
     @Test
     @FileParameters(value = "src/test/resources/msg1data.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getTestData(String argA, String expectedResult) {
+    public void compareMessages(String argA, String expectedResult) {
 
         Msg1 testmessage = new Msg1();
 
-        assertEquals(expectedResult, testmessage.msg1(argA));
+        assertEquals(expectedResult, testmessage.compareMsg(argA));
     }
 
 }

@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
  * Created by Murcielago on 17.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class OddEvenNumbersTest {
+public class OddEvenNumberTest {
     @Test
     @FileParameters(value = "src/test/resources/oddevennumberdata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getData(int argA, boolean expectedResult) {
+    public void showOddorEvenNumber(int argA, boolean expectedResult) {
 
         OddEvenNumber newObj = new OddEvenNumber();
 

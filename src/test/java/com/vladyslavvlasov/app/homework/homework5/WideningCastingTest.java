@@ -16,7 +16,7 @@ public class WideningCastingTest {
     @Test
     @FileParameters(value = "src/test/resources/wideningdata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getData(byte argA, double expectedResult) {
+    public void testWideningCasting(byte argA, double expectedResult) {
         WideningCasting newObject = new WideningCasting();
         Assert.assertEquals(expectedResult, newObject.wideIt(argA), 0.0);
     }

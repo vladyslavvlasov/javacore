@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
  * Created by Murcielago on 18.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class ArrayApp1KlychTest {
+public class ArrayAppTest {
     @Test
     @FileParameters(value = "src/test/resources/klychdata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void getTestData(int argA, String[] expectedResult) {
+    public void compareArrays(int argA, String[] expectedResult) {
         ArrayApp testApp = new ArrayApp();
         Assert.assertArrayEquals(expectedResult, testApp.returnKlych(argA));
     }

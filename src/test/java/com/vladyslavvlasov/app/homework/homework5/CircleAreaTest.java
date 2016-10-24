@@ -14,7 +14,7 @@ import java.util.Scanner;
  * Created by Murcielago on 16.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class CircleAreaCalculateAreaTest {
+public class CircleAreaTest {
     @Test
     @FileParameters(value = "src/test/resources/circleareadata.csv",
             mapper = CsvWithHeaderMapper.class)

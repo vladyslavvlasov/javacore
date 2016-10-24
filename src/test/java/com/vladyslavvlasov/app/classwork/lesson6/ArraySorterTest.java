@@ -12,7 +12,7 @@ import java.util.Arrays;
  * Created by Murcielago on 19.10.2016.
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ArraySorter {
+public class ArraySorterTest {
 
 
 
@@ -23,9 +23,9 @@ public class ArraySorter {
 
 // in practice difference between sorting methods is time, but we will use earthier solution
 
-        private static final String INPUT_DATA = "D:\\projects\\javacore\\src\\test\\java\\com\\vladyslavvlasov\\app\\classwork\\lesson6\\input.txt";
+        private static final String INPUT_DATA = "src/test/resources/input.txt";
 
-        private static final String EXPECTED_RESULTS = "D:\\projects\\javacore\\src\\test\\java\\com\\vladyslavvlasov\\app\\classwork\\lesson6\\expected.txt";
+        private static final String EXPECTED_RESULTS = "src/test/resources/expected.txt";
 
         private static int[] inputData = null;
 
@@ -79,6 +79,7 @@ public class ArraySorter {
 
         }
 */
+/*
 
         @Ignore("Not ready yet")
 
@@ -87,6 +88,7 @@ public class ArraySorter {
         public void thisTestNotready() {
 
         }
+*/
 
         @After
 

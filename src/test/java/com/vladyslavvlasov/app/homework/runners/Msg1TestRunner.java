@@ -1,6 +1,6 @@
 package com.vladyslavvlasov.app.homework.runners;
 
-import com.vladyslavvlasov.app.homework.homework4.Msg1CompareMessagesTest;
+import com.vladyslavvlasov.app.homework.homework4.Msg1Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
@@ -10,7 +10,7 @@ import org.junit.runner.notification.Failure;
  */
 public class Msg1TestRunner {
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(Msg1CompareMessagesTest.class);
+        Result result = JUnitCore.runClasses(Msg1Test.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }

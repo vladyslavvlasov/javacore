@@ -18,7 +18,7 @@ public class NarrowingCastingTest {
     @Test
     @FileParameters(value = "src/test/resources/narrowingcastdata.csv",
             mapper = CsvWithHeaderMapper.class)
-    public void provideTestWithData(float argA, int expectedResult) {
+    public void testNarrowingCasting(float argA, int expectedResult) {
         NarrowingCasting myObject = new NarrowingCasting();
         Assert.assertEquals(expectedResult, myObject.narrowing(argA));
     }
