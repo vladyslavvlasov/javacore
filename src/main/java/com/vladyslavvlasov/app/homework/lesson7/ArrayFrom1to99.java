@@ -8,30 +8,23 @@ import java.util.stream.IntStream;
  */
 public class ArrayFrom1to99 {
     public static void main(String[] args) {
-        ArrayFrom1to99 newObject = new ArrayFrom1to99();
-        newObject.createArray();
+        ArrayFrom1to99.createArray();
     }
 
-    public void printArray(int[] anArray) {
-        for (int j = 0; j < anArray.length; j++) {
-            System.out.print(anArray[j] + " ");
-        }
-    }
-
-    public void printArrayInReverse(int[] anArray2) {
-        for (int u = 49; u >= 0; u--) {
-            System.out.print(anArray2[u] + " ");
-        }
-    }
-
-    public int[] createArray() {
+    public static void createArray() {
         int[] myArray = IntStream.iterate(1, n -> n + 2).limit(50).toArray();
         ArrayFrom1to99 printObject = new ArrayFrom1to99();
-        printObject.printArray(myArray);
+        for (int j = 0; j < myArray.length; j++) {
+            System.out.print(myArray[j] + " ");
+        }
         System.out.println(" ");
-        printObject.printArrayInReverse(myArray);
-        return myArray;
+        for (int u = 49; u >= 0; u--) {
+            System.out.print(myArray[u] + " ");
+        }
     }
 }
+
+
+
 
 
