@@ -1,0 +1,10 @@
+argA, expectedResult
+1, true
+0, false
+2, true
+3, true
+101, true
+18783, true
+1878, true
+100, true
+0, false

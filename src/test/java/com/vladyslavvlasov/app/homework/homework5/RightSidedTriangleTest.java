@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
  * Created by Murcielago on 17.10.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class RightSidedTriangleCheckerTest {
+public class RightSidedTriangleTest {
     @Test
     @FileParameters(value = "src/test/resources/righttriangledata.csv",
             mapper = CsvWithHeaderMapper.class)
