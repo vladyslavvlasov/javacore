@@ -17,7 +17,7 @@ public class ArrayMatrix {
             System.out.print("Line " + counter);
             for (int j = 0; j < matrixArray[i].length; j++) {
                 matrixArray[i][j] = min + (int) (Math.random() * ((max - min) + 1));
-                System.out.printf("%10s", matrixArray[i][j] + " ");
+                System.out.printf("%5d", matrixArray[i][j]);
             }
             System.out.println();
             counter++;

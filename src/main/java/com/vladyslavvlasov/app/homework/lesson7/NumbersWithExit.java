@@ -16,7 +16,7 @@ public class NumbersWithExit {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter a number or type in \"Exit\"");
             String input = scanner.nextLine();
-            if (input.toLowerCase().equals("exit")) {
+            if (input.toLowerCase().equalsIgnoreCase("exit")) {
                 System.out.println("Your sum of numbers is " + sumofnumbers);
                 System.exit(0);
             } else {

@@ -19,7 +19,7 @@ public class LoopsArraysRunner {
             System.out.println("5.Array from 10 to 99");
             System.out.println("6.Array Matrix");
             System.out.println("7.Numbers with Exit");
-            System.out.println("If you want to exit type in bye");
+            System.out.println("If you want to exit type in \"bye\"");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             if (input.toLowerCase().equals("bye")) {
