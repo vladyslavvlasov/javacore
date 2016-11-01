@@ -9,14 +9,13 @@ import java.util.Scanner;
  */
 public class ArrayAppRunner {
     public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Please enter a number of klych");
-            System.out.println("1.Slava Ukraini");
-            System.out.println("2.Slava Nazii");
-            System.out.println("3.Ukraina");
-            int number = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number of klych");
+        System.out.println("1.Slava Ukraini");
+        System.out.println("2.Slava Nazii");
+        System.out.println("3.Ukraina");
+        int number = scanner.nextInt();
         ArrayApp newArr = new ArrayApp();
-newArr.returnKlych(number-1);
-
+        newArr.returnKlych(number - 1);
     }
 }

@@ -24,6 +24,4 @@ public class CircleAreaTest {
 
         Assert.assertEquals(expectedResult, testCircle.calculate(argA), 1.0);
     }
-
-
 }

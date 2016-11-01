@@ -1,6 +1,7 @@
 package com.vladyslavvlasov.runners.homework.lesson7;
 
 import com.vladyslavvlasov.app.homework.lesson7.*;
+import com.vladyslavvlasov.app.homework.lesson9.ArrayPrint;
 
 import java.util.Scanner;
 
@@ -32,21 +33,34 @@ public class LoopsArraysRunner {
     }
 
     public static void runProgram(int anynumber) {
-        if (anynumber == 1) {
-            ArrayFrom2to20.printArrayFrom2to20();
-        } else if (anynumber == 2) {
-            ArrayFrom1to99.createArray();
-        } else if (anynumber == 3) {
-            ArrayFrom0to9.fillArray();
-        } else if (anynumber == 4) {
-            ArrayFrom0to999.createArray();
-        } else if (anynumber == 5) {
-            ArrayFrom10to99.fillArray();
-        } else if (anynumber == 6) {
-            ArrayMatrix.printArray();
-        } else if (anynumber == 7) {
-            NumbersWithExit.askNumbers();
-        } else
-            System.out.println("Ooops, number is incorrect. Please choose 1,2,3,4,5 or type in bye");
+        switch (anynumber) {
+            case 1:
+                int[] intArray = ArrayFrom2to20.createArrayFrom2to20();
+                ArrayPrint.printArrayInLine(intArray);
+                ArrayPrint.printArrayInColumn(intArray);
+                break;
+            case 2:
+                int[] myArray = ArrayFrom1to99.createArrayFrom1to99();
+                ArrayPrint.printArrayInLine(myArray);
+                ArrayPrint.printArrayInLineBackwords(myArray);
+                break;
+            case 3:
+                ArrayFrom0to9.fillRandomArrayFrom0to9();
+                break;
+            case 4:
+                ArrayFrom0to999.createArrayFrom0to999();
+                break;
+            case 5:
+                ArrayFrom10to99.fillArray();
+                break;
+            case 6:
+                ArrayMatrix.createMatrixArray();
+                break;
+            case 7:
+                NumbersWithExit.askNumbers();
+                break;
+            default:
+                System.out.println("Ooops, number is incorrect. Please choose 1,2,3,4,5 or type in bye");
+        }
     }
 }

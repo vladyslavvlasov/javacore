@@ -21,5 +21,4 @@ public class BiggerAreaCalculationTest {
         BiggerAreaCalculation testCircle = new BiggerAreaCalculation();
         Assert.assertEquals(expectedResult, testCircle.calculateBigger(argA, argB), 0.0);
     }
-
 }

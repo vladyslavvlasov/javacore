@@ -16,6 +16,5 @@ public class Msg1TestRunner {
         }
         System.out.println(result.wasSuccessful());
     }
-
 }
 

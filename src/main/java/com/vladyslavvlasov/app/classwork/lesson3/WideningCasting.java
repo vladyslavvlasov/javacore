@@ -11,7 +11,6 @@ public class WideningCasting {
     static float float1 = 0.0f;
     static double double1 = 0.0d;
 
-    //correct conversion 64f<=32f<=64<=32<=16<=8
     public static double wideIt(byte byte1) {
         double1 = float1 = long1 = int1 = short1 = byte1;
         System.out.println(double1);

@@ -28,11 +28,12 @@ public class BonusCalculatorTest {
         testObj.setSalary(expectedResult);
         Assert.assertEquals(expectedResult, testObj.getSalary(), 0.0);
     }
+
     @Test
-    public void testPositionGetters(){
+    public void testPositionGetters() {
         BonusCalculator testObj = new BonusCalculator();
         int expectedResult = 1;
         testObj.setPositionLevel(expectedResult);
-        Assert.assertEquals(expectedResult,testObj.getPositionLevel());
+        Assert.assertEquals(expectedResult, testObj.getPositionLevel());
     }
 }

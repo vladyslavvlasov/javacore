@@ -23,5 +23,4 @@ public class Msg1Test {
 
         assertEquals(expectedResult, testmessage.compareMsg(argA));
     }
-
 }

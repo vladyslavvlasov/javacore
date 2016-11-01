@@ -11,9 +11,4 @@ public class Msg1 {
         System.out.println(msg1);
         return msg1;
     }
-
- /*   public String printMsg1() {
-        System.out.println(msg1);
-        return msg1;
-    }*/
 }

@@ -22,5 +22,4 @@ public class NarrowingCastingTest {
         NarrowingCasting myObject = new NarrowingCasting();
         Assert.assertEquals(expectedResult, myObject.narrowing(argA));
     }
-
 }
