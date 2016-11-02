@@ -1,6 +1,7 @@
 package com.vladyslavvlasov.runners.homework.lesson7;
 
 import com.vladyslavvlasov.app.homework.lesson7.*;
+import com.vladyslavvlasov.app.homework.lesson9.ArrayFromNegative99to99;
 import com.vladyslavvlasov.app.homework.lesson9.ArrayPrint;
 
 import java.util.Scanner;
@@ -20,6 +21,7 @@ public class LoopsArraysRunner {
             System.out.println("5.Array from 10 to 99");
             System.out.println("6.Array Matrix");
             System.out.println("7.Numbers with Exit");
+            System.out.println("8.Array from -99 to 99");
             System.out.println("If you want to exit type in \"bye\"");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
@@ -59,8 +61,11 @@ public class LoopsArraysRunner {
             case 7:
                 NumbersWithExit.askNumbers();
                 break;
+            case 8:
+                ArrayFromNegative99to99.createArrayFromNegative99to99();
+                break;
             default:
-                System.out.println("Ooops, number is incorrect. Please choose 1,2,3,4,5 or type in bye");
+                System.out.println("Ooops, number is incorrect. Please choose 1,2,3,4,5,6,7,8 or type in bye");
         }
     }
 }

@@ -1,0 +1,6 @@
+int argA|char expected Result
+44| \,
+52|4
+64|@
+62| >
+96|`
