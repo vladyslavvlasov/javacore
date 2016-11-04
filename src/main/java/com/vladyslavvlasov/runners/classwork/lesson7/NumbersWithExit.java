@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.app.homework.lesson7;
+package com.vladyslavvlasov.runners.classwork.lesson7;
 
 import java.util.Scanner;
 

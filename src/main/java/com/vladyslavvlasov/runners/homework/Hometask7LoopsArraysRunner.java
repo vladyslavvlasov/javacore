@@ -1,15 +1,16 @@
-package com.vladyslavvlasov.runners.homework.lesson7;
+package com.vladyslavvlasov.runners.homework;
 
 import com.vladyslavvlasov.app.homework.lesson7.*;
 import com.vladyslavvlasov.app.homework.lesson9.ArrayFromNegative99to99;
-import com.vladyslavvlasov.app.homework.lesson9.ArrayPrint;
+import com.vladyslavvlasov.runners.classwork.lesson7.NumbersWithExit;
+import com.vladyslavvlasov.runners.homework.Lesson9.ArrayPrint;
 
 import java.util.Scanner;
 
 /**
  * Created by Murcielago on 25.10.2016.
  */
-public class LoopsArraysRunner {
+public class Hometask7LoopsArraysRunner {
     public static void main(String[] args) {
         while (true) {
             System.out.println();
@@ -29,7 +30,7 @@ public class LoopsArraysRunner {
                 System.exit(0);
             } else {
                 int number = Integer.parseInt(input);
-                LoopsArraysRunner.runProgram(number);
+                Hometask7LoopsArraysRunner.runProgram(number);
             }
         }
     }

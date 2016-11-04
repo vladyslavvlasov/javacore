@@ -20,8 +20,8 @@ public class MultiplicationTest {
         int flag = 0;
         int expRes = 0;
         String[] newTable = Multiplication.createMultiplicationTable();
-        for (int i = 0; i < newTable.length - 1; i++) {
-            for (int j = 0; j < newTable.length; j++) {
+        for (int i = 0; i < newTable.length ; i++) {
+            for (int j = i+1; j < newTable.length; j++) {
                 if (i != j && newTable[i].equals(newTable[j])) {
                     flag = 1;
                 }
@@ -35,8 +35,8 @@ public class MultiplicationTest {
         int flag = 0;
         int expRes = 0;
         String[] newArr = Multiplication.createTeacherArray();
-        for (int i = 0; i < newArr.length - 1; i++) {
-            for (int j = 0; j < newArr.length; j++) {
+        for (int i = 0; i < newArr.length; i++) {
+            for (int j = i+1; j < newArr.length; j++) {
                 if (i != j && newArr[i].equals(newArr[j])) {
                     flag = 1;
                 }

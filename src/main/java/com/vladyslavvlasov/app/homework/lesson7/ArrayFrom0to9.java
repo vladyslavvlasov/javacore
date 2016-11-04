@@ -1,8 +1,6 @@
 package com.vladyslavvlasov.app.homework.lesson7;
 
-import com.vladyslavvlasov.app.homework.lesson9.ArrayPrint;
-
-import java.util.Arrays;
+import com.vladyslavvlasov.runners.homework.Lesson9.ArrayPrint;
 
 /**
  * Created by Murcielago on 24.10.2016.

@@ -1,6 +1,5 @@
 package com.vladyslavvlasov.runners.homework.Lesson9;
 
-import com.vladyslavvlasov.app.homework.lesson9.ArrayPrint;
 import com.vladyslavvlasov.app.homework.lesson9.BubbleAndSelectionSorting;
 
 import java.util.Scanner;
