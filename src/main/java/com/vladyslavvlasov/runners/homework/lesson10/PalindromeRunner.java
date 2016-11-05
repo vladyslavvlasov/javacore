@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.runners.homework;
+package com.vladyslavvlasov.runners.homework.lesson10;
 
 import com.vladyslavvlasov.app.classwork.lesson10.Palindrome;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by Murcielago on 03.11.2016.
  */
-public class Hometask10PalindromeRunner {
+public class PalindromeRunner {
     public static void main(String[] args) {
         while (true) {
             System.out.println("Hello, Leonid. Please choose one out of 4 palindrome methods. Program will ouput true if the number is a palindrome and false if not:");
@@ -22,7 +22,7 @@ public class Hometask10PalindromeRunner {
                 System.exit(0);
             } else {
                 int inputNumber = Integer.valueOf(input);
-                Hometask10PalindromeRunner.runPalindromeCheckers(inputNumber);
+                PalindromeRunner.runPalindromeCheckers(inputNumber);
             }
         }
     }

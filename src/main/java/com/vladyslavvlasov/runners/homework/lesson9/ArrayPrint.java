@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.runners.homework.Lesson9;
+package com.vladyslavvlasov.runners.homework.lesson9;
 
 import java.util.Arrays;
 
