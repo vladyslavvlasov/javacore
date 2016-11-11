@@ -34,4 +34,10 @@ public class ArrayPrint {
             System.out.println();
         }
     }
+    public static void printDoubleArrayInLine(double [] newArr){
+        for (int i = 0; i < newArr.length; i++) {
+            System.out.print(newArr[i] + " ");
+        }
+        System.out.println();
+    }
 }

@@ -63,4 +63,40 @@ public static int[] sortArrayUsingSelectionSortingfromSmallertoBigger(int[] arra
         int[] arrayForBubbleSort = {2, 5, 4, 1, 3};
         return arrayForBubbleSort;
     }
+    public static double[] sortDoubleArrayfromSmallertoBigger(double[] bubbleArray) {
+        int i;
+        int j;
+        double temp;
+        do {
+            j = 0;
+            for (i = 0; i < bubbleArray.length - 1; i++) {
+                if (bubbleArray[i] > bubbleArray[i + 1]) {
+                    temp = bubbleArray[i];
+                    bubbleArray[i] = bubbleArray[i + 1];
+                    bubbleArray[i + 1] = temp;
+                    j = 1;
+                }
+            }
+        }
+        while (j > 0);
+        return bubbleArray;
+    }
+    public static double[] sortDoubleArrayfromBiggertoSmaller(double[] bubbleArray) {
+        int i;
+        int j;
+        double temp;
+        do {
+            j = 0;
+            for (i = 0; i < bubbleArray.length - 1; i++) {
+                if (bubbleArray[i] < bubbleArray[i + 1]) {
+                    temp = bubbleArray[i];
+                    bubbleArray[i] = bubbleArray[i + 1];
+                    bubbleArray[i + 1] = temp;
+                    j = 1;
+                }
+            }
+        }
+        while (j > 0);
+        return bubbleArray;
+    }
 }
