@@ -1,0 +1,4 @@
+kayak is palindrome
+sonces is not a palindrome
+moom is palindrome
+porrop is palindrome
