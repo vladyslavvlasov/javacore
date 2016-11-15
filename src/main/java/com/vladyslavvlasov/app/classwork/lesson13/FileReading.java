@@ -17,14 +17,11 @@ public class FileReading {
                 System.out.println(line);
             }
             reader.close();
-        }
-        catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
-        catch (IOException e){
-e.printStackTrace();
-        }
-        finally {
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             System.out.println("Print this message regardless of exception");
         }
     }

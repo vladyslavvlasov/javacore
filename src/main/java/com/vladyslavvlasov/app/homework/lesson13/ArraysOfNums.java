@@ -12,15 +12,15 @@ import java.util.Arrays;
 public class ArraysOfNums {
     public static void main(String[] args) {
         ArraysOfNums.getFilePath();
-}
+    }
 
     public static void readAndWriteArraysToFile() {
         try {
-            String fileDir =ArraysOfNums.getFilePath();
-            BufferedReader reader = new BufferedReader(new FileReader(fileDir+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"lesson13"+File.separator+"arraysofnumsinput"));
+            String fileDir = ArraysOfNums.getFilePath();
+            BufferedReader reader = new BufferedReader(new FileReader(fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator + "arraysofnumsinput"));
             //BufferedReader reader = new BufferedReader(new FileReader("H:\\projects\\javacore\\src\\test\\resources\\lesson13\\arraysofnumsinput"));
             String line;
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"lesson13"+File.separator+"arraysofnumsoutput")));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator + "arraysofnumsoutput")));
             while ((line = reader.readLine()) != null) {
                 String[] newArr = line.split(",");
                 int[] intArr = new int[newArr.length];
@@ -52,7 +52,8 @@ public class ArraysOfNums {
         String resultStr = builder.toString();
         return resultStr;
     }
-    public static String getFilePath(){
+
+    public static String getFilePath() {
         String workingDir = System.getProperty("user.dir");
         String absoluteFilePath = workingDir + File.separator;
         return absoluteFilePath;

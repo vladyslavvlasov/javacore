@@ -12,10 +12,10 @@ public class PalindromeFromFile {
 
     public static void writePalindromeCheckResult() {
         try {
-            String fileDir= ArraysOfNums.getFilePath();
-            BufferedReader reader = new BufferedReader(new FileReader(fileDir+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"lesson13"+File.separator+"input.txt"));
+            String fileDir = ArraysOfNums.getFilePath();
+            BufferedReader reader = new BufferedReader(new FileReader(fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator + "input.txt"));
             String line;
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"lesson13"+File.separator+"output.txt")));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator + "output.txt")));
             while ((line = reader.readLine()) != null) {
                 boolean checkIfPal = Palindrome.checkIfPalindrome1(line);
                 if (checkIfPal == true) {

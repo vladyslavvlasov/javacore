@@ -10,7 +10,7 @@ public class ABCarray {
 
     public static String createABCarr(String s, String divider) {
 
-        String updatedString = s.replace(divider, "".replaceAll(" ",""));
+        String updatedString = s.replace(divider, "".replaceAll(" ", ""));
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < updatedString.length(); i++) {
             if (Character.isLetter(updatedString.charAt(i))) {

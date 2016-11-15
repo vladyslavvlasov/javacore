@@ -78,6 +78,7 @@ public class Homework13Runner {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+                System.out.println("Your \"Your config.properties file should be created in your working directory. Please check it.\"");
                 break;
         }
     }

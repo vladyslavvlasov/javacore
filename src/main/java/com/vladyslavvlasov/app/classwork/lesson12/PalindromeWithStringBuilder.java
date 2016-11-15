@@ -17,10 +17,11 @@ public class PalindromeWithStringBuilder {
         } else
             System.out.println("Nope, this is not a palindrome");
     }
+
     public static void convertString() {
         char[] charArr = {'6', '&', 'a'};
         StringBuilder builder = new StringBuilder();
-        for (int i=0; i<charArr.length;i++){
+        for (int i = 0; i < charArr.length; i++) {
             builder.append(charArr[i]);
         }
         System.out.println(builder);
