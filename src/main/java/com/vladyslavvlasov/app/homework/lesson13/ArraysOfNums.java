@@ -33,7 +33,7 @@ public class ArraysOfNums {
             }
             reader.close();
             writer.close();
-            System.out.println("Files must have been written to arraysofnumsoutput.txt file. Please have a look at it." + "\n");
+            System.out.println("Files must have been written to arraysofnumsoutput.txt at "+ fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator +" Please have a look at it." + "\n");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

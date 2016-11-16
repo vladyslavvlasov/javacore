@@ -28,7 +28,7 @@ public class PalindromeFromFile {
             }
             reader.close();
             writer.close();
-            System.out.println("Your result of palindrome check should be in output.txt file. Please check it.");
+            System.out.println("Your result of palindrome check should be in output.txt file at"+fileDir + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "lesson13" + File.separator +". Please check it.");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
