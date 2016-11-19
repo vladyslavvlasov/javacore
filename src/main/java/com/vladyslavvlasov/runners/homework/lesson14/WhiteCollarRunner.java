@@ -7,7 +7,7 @@ import com.vladyslavvlasov.app.homework.lesson14.WhiteCollar;
  */
 public class WhiteCollarRunner {
     public static void main(String[] args) {
-        WhiteCollar firstWhiteCollar = new WhiteCollar(27, "Slava", "None");
+        WhiteCollar firstWhiteCollar = new WhiteCollar(121, "Slava", "3SHape ,---");
     }
 }
 

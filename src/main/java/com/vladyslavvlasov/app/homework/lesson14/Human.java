@@ -8,11 +8,8 @@ public class Human {
     private int age;
 
     public Human(String name, int age) {
-        this.name = name;
-        this.age = setAge(age);
-    }
-
-    public Human() {
+        setName(name);
+        setAge(age);
     }
 
     public String getName() {
@@ -23,20 +20,18 @@ public class Human {
         return age;
     }
 
-    public String setName(String name) {
-        System.out.println("The name has been set to " + name);
+    public void setName(String name) {
         this.name = name;
-        return name;
+        System.out.println("The name has been set to " + name);
     }
 
-    public int setAge(int age) {
+    public void setAge(int age) {
         if (age >= 1 && age <= 120) {
             this.age = age;
             System.out.println("The age has been set to " + age);
         } else {
             System.out.println("Age is invalid. Age should be between 1 and 120 inclusive.");
         }
-        return this.age;
     }
 }
 
