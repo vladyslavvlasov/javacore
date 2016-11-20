@@ -25,6 +25,7 @@ public class Human {
         System.out.println("The name has been set to " + name);
     }
 
+
     public void setAge(int age) {
         if (age >= 1 && age <= 120) {
             this.age = age;

@@ -1,5 +1,6 @@
 package com.vladyslavvlasov.runners.homework.lesson14;
 
+import com.vladyslavvlasov.app.homework.lesson14.Human;
 import com.vladyslavvlasov.app.homework.lesson14.WhiteCollar;
 
 /**

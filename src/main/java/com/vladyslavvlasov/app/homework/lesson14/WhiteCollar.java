@@ -7,7 +7,7 @@ public class WhiteCollar extends Human {
     private String companyName;
 
     public WhiteCollar(int age, String name, String companyName) {
-       super(name,age);
+        super(name, age);
         setCompany(companyName);
     }
 
