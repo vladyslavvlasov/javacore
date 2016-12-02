@@ -1,0 +1,11 @@
+Profession, Name, Last_name, Faculty, Course(optional)
+Professor, John, Hughes, Philology
+Professor, Adam, Sandler, Philosophy
+Professor, Jack, Sparrow, Law
+Head, Craig, Nicholson,Law
+Student, Slava, Vlasov, Philology, Senior
+Student, David, Alaba, Philosophy, Sophomore
+Student, Marek, Polski, Philology, Junior
+Student, Fabrizio, Ravanelli, Law, Junior
+Student, Joe, Davidson, Law, Senior
+Student, Christian, Johnson, Philosophy, Freshman
