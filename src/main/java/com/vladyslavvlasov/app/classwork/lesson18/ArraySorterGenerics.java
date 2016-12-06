@@ -25,7 +25,6 @@ public class ArraySorterGenerics<T extends Number> {
         boolean flag = true;   // set flag to true to begin first pass
         T temp;   //holding variable
 
-
         while (flag) {
             flag = false;    //set flag to false awaiting a possible swap
             for (j = 0; j < array.length - 1; j++) {
