@@ -1,4 +1,4 @@
-package com.vladyslavvlasov.app.extrastuff.Generics;
+package com.vladyslavvlasov.extrastuff.Generics;
 
 /**
  * Created by Murcielago on 04.12.2016.
