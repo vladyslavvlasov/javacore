@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by Vladyslav Vlasov on 19.12.2016.
  */
@@ -40,6 +42,7 @@ public class EquerestTests {
     @Test
     public void testExistingEmail() {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://dev.equerest.com/info/entrepreneur");
         WebElement button1 = driver.findElement(By.xpath("//*[@href = \"/register#/entrepreneur\"]"));
         button1.click();
@@ -56,11 +59,6 @@ public class EquerestTests {
         email.sendKeys(existingEmail);
         WebElement step2 = driver.findElement(By.xpath("//*[@ class = 'button button-blue button-next']"));
         step2.click();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         WebElement em = driver.findElement(toastMessage);
         String actualEm = em.getAttribute("aria-label");
         Assert.assertEquals(actualEm, toastText);
@@ -70,6 +68,7 @@ public class EquerestTests {
     @Test
     public void testBlankFields() {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         driver.get("https://dev.equerest.com/info/entrepreneur");
         WebElement button1 = driver.findElement(By.xpath("//*[@href = \"/register#/entrepreneur\"]"));
         button1.click();
@@ -85,6 +84,7 @@ public class EquerestTests {
     @Test
     public void testIncorrectPhoneNumber() {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         driver.get("https://dev.equerest.com/info/entrepreneur");
         WebElement button1 = driver.findElement(By.xpath("//*[@href = \"/register#/entrepreneur\"]"));
         button1.click();
@@ -102,6 +102,7 @@ public class EquerestTests {
     @Test
     public void login() {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         driver.get("https://dev.equerest.com/");
         WebElement loginButton = driver.findElement(loginLink);
         loginButton.click();
@@ -111,11 +112,6 @@ public class EquerestTests {
         password.sendKeys(existingPassword);
         WebElement submitBut = driver.findElement(submitButton);
         submitBut.click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         String actualMesg = driver.findElement(projectTitle).getText();
         Assert.assertEquals(actualMesg, projTitle);
         driver.close();
@@ -124,6 +120,7 @@ public class EquerestTests {
     @Test
     public void changePhoneNum() {
         WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         driver.get("https://dev.equerest.com/");
         WebElement loginButton = driver.findElement(loginLink);
         loginButton.click();
@@ -133,18 +130,8 @@ public class EquerestTests {
         password.sendKeys(existingPassword);
         WebElement submitBut = driver.findElement(submitButton);
         submitBut.click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         WebElement settingsButton = driver.findElement(settings);
         settingsButton.click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         WebElement phoneEditorButton = driver.findElement(phoneEditor);
         phoneEditorButton.click();
         WebElement phoneField = driver.findElement(phoneId);
