@@ -81,7 +81,6 @@ public class SuperBallApp implements MouseListener {
                 g.setColor(Color.red);
                 g.fillOval(x, y, 30, 30);
             }
-
         }
     }
 
