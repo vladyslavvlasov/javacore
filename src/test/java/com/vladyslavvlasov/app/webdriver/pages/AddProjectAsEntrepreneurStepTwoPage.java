@@ -24,30 +24,30 @@ public class AddProjectAsEntrepreneurStepTwoPage extends AbstractPage {
 
     String emailErrorMessage = "Пользователь с таким e-mail уже зарегестрирован.";
 
-    public void fillInName() {
+    public void fillInName(String nameStr) {
         WebElement fullName = driver.findElement(name);
-        fullName.sendKeys(EXISTING_LOGIN_NAME);
+        fullName.sendKeys(nameStr);
     }
 
-    public void fillInCity() {
+    public void fillInCity(String cityArg) {
         WebElement thisCity = driver.findElement(city);
-        thisCity.sendKeys(CITY);
+        thisCity.sendKeys(cityArg);
     }
 
-    public void fillInPhone() {
+    public void fillInPhone(String phonenumber) {
         WebElement phoneNum = driver.findElement(phone);
         phoneNum.clear();
-        phoneNum.sendKeys(DEFAULT_PHONE_NUMBER);
+        phoneNum.sendKeys(phonenumber);
     }
 
-    public void fillInPassword() {
+    public void fillInPassword(String passArg) {
         WebElement pass = driver.findElement(password);
-        pass.sendKeys(DEFAULT_PASS);
+        pass.sendKeys(passArg);
     }
 
-    public void fillInEmail() {
+    public void fillInEmail(String regEmail) {
         WebElement emailField = driver.findElement(email);
-        emailField.sendKeys(EXISTING_EMAIL);
+        emailField.sendKeys(regEmail);
     }
 
     public void clickOnGoToStep2() {

@@ -10,13 +10,15 @@ public class AddProjectAsEntrepreneurStepOnePage extends AbstractPage {
     By registerLink = By.xpath("//*[@href = \"/register#/entrepreneur\"]");
 
 
-    public AddProjectAsEntrepreneurStepOnePage(WebDriver driver){
+    public AddProjectAsEntrepreneurStepOnePage(WebDriver driver) {
         super(driver);
     }
-public  void goToRegistration(){
+
+    public void goToRegistration() {
         driver.findElement(registerLink).click();
-}
-public void goToEntrepreneurPage(){
-    driver.get(BASE_URL+"info/entrepreneur/");
-}
+    }
+
+    public void goToEntrepreneurPage() {
+        driver.get(BASE_URL + "info/entrepreneur/");
+    }
 }
