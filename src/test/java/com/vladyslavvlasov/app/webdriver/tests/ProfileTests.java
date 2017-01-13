@@ -3,8 +3,6 @@ package com.vladyslavvlasov.app.webdriver.tests;
 import com.vladyslavvlasov.app.webdriver.pages.*;
 import org.junit.Test;
 
-import java.util.Set;
-
 /**
  * Created by Vladyslav Vlasov on 26.12.2016.
  */

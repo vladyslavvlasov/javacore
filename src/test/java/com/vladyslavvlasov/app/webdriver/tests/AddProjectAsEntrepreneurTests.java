@@ -5,9 +5,6 @@ import com.vladyslavvlasov.app.webdriver.pages.AddProjectAsEntrepreneurStepOnePa
 import com.vladyslavvlasov.app.webdriver.pages.AddProjectAsEntrepreneurStepTwoPage;
 import com.vladyslavvlasov.app.webdriver.pages.StartPage;
 import org.junit.Test;
-import org.openqa.selenium.By;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Vladyslav Vlasov on 21.12.2016.

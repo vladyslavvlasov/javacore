@@ -5,7 +5,6 @@ import com.vladyslavvlasov.app.webdriver.pages.LoginPage;
 import com.vladyslavvlasov.app.webdriver.pages.ProjectPage;
 import com.vladyslavvlasov.app.webdriver.pages.StartPage;
 import org.junit.Test;
-import org.openqa.selenium.By;
 
 /**
  * Created by Vladyslav Vlasov on 26.12.2016.

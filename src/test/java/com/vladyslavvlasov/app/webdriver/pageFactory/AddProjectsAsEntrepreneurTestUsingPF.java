@@ -1,6 +1,5 @@
 package com.vladyslavvlasov.app.webdriver.pageFactory;
 
-import com.vladyslavvlasov.app.webdriver.pages.AddProjectAsEntrepreneurStepTwoPage;
 import com.vladyslavvlasov.app.webdriver.tests.BaseTest;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;

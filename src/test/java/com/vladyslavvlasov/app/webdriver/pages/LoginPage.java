@@ -17,6 +17,7 @@ public class LoginPage extends AbstractPage {
     By passwordField = By.id("password");
 
     public static By submitButton = By.xpath("//*[@id='submit-block']//button[@type = 'submit']");
+
     public void fillEmailField(String email) {
         WebElement mailField = driver.findElement(emailField);
         mailField.sendKeys(email);
@@ -26,6 +27,4 @@ public class LoginPage extends AbstractPage {
         WebElement passField = driver.findElement(passwordField);
         passField.sendKeys(pass);
     }
-
-
 }
